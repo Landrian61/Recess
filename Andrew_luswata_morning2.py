@@ -147,7 +147,6 @@
 
 # # Exercise 2: Convert 37 degrees celsius to fahrenheit.
 
-
 class Temperature:
     def __init__(self, celsius):
         self._celsius = celsius
@@ -160,22 +159,19 @@ class Temperature:
 
 temp1 = Temperature(37)
 temp1.display()
+print("================================================")
 
 # Assignment 2: Show encapsulation with employee information to give a
 # pay incrementation (Salary with employee information to new salary) eg from 850000 to 1000000.
 
 
 class Employee:
-    def __init__(self, name, employee_id, salary):
+    def __init__(self, name, salary):
         self._name = name
-        self._employee_id = employee_id
         self._salary = salary
 
     def get_name(self):
         return self._name
-
-    def get_employee_id(self):
-        return self._employee_id
 
     def get_salary(self):
         return self._salary
@@ -188,7 +184,7 @@ class Employee:
 
 
 # Creating an employee object
-employee = Employee("John Doe", "E1234", 850000)
+employee = Employee("Kigoma Benjamin", 850000)
 
 # Getting the current salary
 current_salary = employee.get_salary()
