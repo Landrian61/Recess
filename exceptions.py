@@ -3,24 +3,24 @@
 #  When an exceptional situation arises, an exception object is raised, and the normal flow of the program is interrupted.
 #  If the exception is not handled, it will cause the program to terminate and display an error message.
 
-def divide_numbers():
-    try:
-        a = int(input("Enter first number :"))
-        b = int(input("Enter second number :"))
-        result = a / b
-        print(f"The result of division is: {result}")
-    except ZeroDivisionError:
-        print("Error: Division by zero is not allowed.")
-    except TypeError:
-        print("Error: Invalid operand types for division.")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
-    finally:
-        print("Division operation completed.")
+# def divide_numbers():
+#     try:
+#         a = input("Enter first number :")
+#         b = input("Enter second number :")
+#         result = a / b
+#         print(f"The result of division is: {result}")
+#     except ZeroDivisionError:
+#         print("Error: Division by zero is not allowed.")
+#     except TypeError:
+#         print("Error: Invalid operand types for division.")
+#     except Exception as e:
+#         print(f"An unexpected error occurred: {e}")
+#     finally:
+#         print("Division operation completed.")
 
 
-# Example usage
-divide_numbers()
+# # Example usage
+# divide_numbers()
 
 # File handling
 # File handling in Python is the process of working with files, which can be used to read data from or write data to files on a computer.
@@ -46,37 +46,37 @@ divide_numbers()
 
 # # Example usage
 # # Opening a file in write mode and writing data to it
-# file = open("example.txt", "w")
-# file.write("Hello, World!\n")
-# file.write("This is a demo file.\n")
-# file.close()
+file = open("example.txt", "w")
+file.write("Hello, World!\n")
+file.write("This is a demo file.\n")
+file.close()
 
 # # Opening the same file in read mode and reading its contents
-# file = open("example.txt", "r")
-# content = file.read()
-# print("File Contents:\n", content)
-# file.close()
+file = open("example.txt", "r")
+content = file.read()
+print("File Contents:\n", content)
+file.close()
 
 # # Opening the same file in read mode and reading line by line
-# file = open("example.txt", "r")
-# line = file.readline()
-# print("First line:", line)
-# lines = file.readlines()
-# print("Remaining lines:", lines)
-# file.close()
+file = open("example.txt", "r")
+line = file.readline()
+print("First line:", line)
+lines = file.readlines()
+print("Remaining lines:", lines)
+file.close()
 
 # # Opening the same file in append mode and appending more data to it
-# file = open("example.txt", "a")
-# file.write("Appending new line.\n")
-# file.close()
+file = open("example.txt", "a")
+file.write("Appending new line.\n")
+file.close()
 
 # # Opening the same file in read mode again and printing its updated contents
-# file = open("example.txt", "r")
-# content = file.read()
-# print("Updated File Contents:\n", content)
-# file.close()
+file = open("example.txt", "r")
+content = file.read()
+print("Updated File Contents:\n", content)
+file.close()
 
 # # Using the with statement to automatically close the file
-# with open("example.txt", "r") as file:
-#     content = file.read()
-#     print("File Contents using with statement:\n", content)
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("File Contents using with statement:\n", content)
